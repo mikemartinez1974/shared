@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-02-28T17:06:40.339Z",
-    "modified": "2026-02-28T17:18:47.528Z",
+    "modified": "2026-02-28T17:24:28.051Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -377,7 +377,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -388,7 +391,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -399,7 +405,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -410,7 +419,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     }
   ],
