@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-02-28T18:36:05.634Z",
-    "modified": "2026-02-28T18:47:16.208Z",
+    "modified": "2026-02-28T18:51:12.798Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -140,6 +140,12 @@
             "intent": "navigation",
             "implementation": "external port node",
             "dictionaryKey": "port"
+          },
+          {
+            "key": "complaint",
+            "intent": "A way to register discontent.",
+            "implementation": "node",
+            "dictionaryKey": "complaint"
           }
         ]
       }
@@ -378,8 +384,8 @@
       "type": "complaint",
       "label": "complaint",
       "position": {
-        "x": -482,
-        "y": -102.5
+        "x": -314.12453490026553,
+        "y": -115.85373017838798
       },
       "width": 309,
       "height": 126,
