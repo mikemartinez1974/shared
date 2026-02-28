@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-02-28T18:36:05.634Z",
-    "modified": "2026-02-28T18:40:12.455Z",
+    "modified": "2026-02-28T18:45:04.377Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -102,13 +102,13 @@
             }
           },
           "github": {
-            "repo": "mikemartinez1074/shared",
+            "repo": "mikemartinez1974/shared",
             "path": "root.node",
             "branch": "main",
-            "autoCreateRepo": true,
+            "autoCreateRepo": false,
             "repoVisibility": "public",
-            "seedOnCommit": true,
-            "enableGithubPages": true,
+            "seedOnCommit": false,
+            "enableGithubPages": false,
             "seedLandingPage": true
           },
           "autoSave": false
