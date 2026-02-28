@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-02-28T17:26:02.302Z",
-    "modified": "2026-02-28T19:21:02.982Z",
+    "modified": "2026-02-28T19:22:20.989Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -375,8 +375,8 @@
       "type": "complaint",
       "label": "complaint",
       "position": {
-        "x": -394.9839102858331,
-        "y": -94.75998007780514
+        "x": -415.19875413222496,
+        "y": -113.21701141581514
       },
       "width": 309,
       "height": 126,
@@ -469,12 +469,6 @@
       "id": "script_1761684730975",
       "name": "New Script",
       "source": "// Write your script here\n// Available API:\n//   api.getNodes()\n//   api.getNode(id)\n//   api.getEdges()\n//   api.createNode(data)\n//   api.updateNode(id, patch)\n//   api.deleteNode(id)\n//   api.createEdge(data)\n//   api.deleteEdge(id)\n//   api.log(level, message)\n\nconst nodes = await api.getNodes();\nreturn { count: nodes.length };",
-      "tags": ""
-    },
-    {
-      "id": "script_1761684295367",
-      "name": "Mike",
-      "source": "console.clear();\nconst nodes = await api.getNodes();\nconsole.log(\"Mike\");\nreturn { count: nodes.length };",
       "tags": ""
     }
   ]
