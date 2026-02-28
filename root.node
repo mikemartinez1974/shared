@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-28T17:06:40.339Z",
-    "modified": "2026-02-28T17:24:28.051Z",
+    "created": "2026-02-28T18:36:05.634Z",
+    "modified": "2026-02-28T18:40:12.455Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -108,7 +108,8 @@
             "autoCreateRepo": true,
             "repoVisibility": "public",
             "seedOnCommit": true,
-            "enableGithubPages": true
+            "enableGithubPages": true,
+            "seedLandingPage": true
           },
           "autoSave": false
         }
@@ -156,9 +157,25 @@
       "visible": true,
       "showLabel": true,
       "data": {
-        "nodeDefs": [],
+        "nodeDefs": [
+          {
+            "key": "complaint",
+            "ref": "https://twilite.zone/tlz/project1/complaint.node-class.node",
+            "source": "codex",
+            "version": "1.0"
+          }
+        ],
         "skills": [],
-        "views": []
+        "views": [
+          {
+            "key": "complaint",
+            "intent": "node",
+            "payload": "node.web",
+            "ref": "https://twilite.zone/tlz/project1/complaint.node-class.node",
+            "source": "codex",
+            "version": "1.0"
+          }
+        ]
       }
     },
     {
@@ -354,6 +371,29 @@
           "portId": "root",
           "label": "Open"
         }
+      }
+    },
+    {
+      "id": "b5c0312c-177a-4ab9-9d99-a73a8de6da9d",
+      "type": "complaint",
+      "label": "complaint",
+      "position": {
+        "x": -482,
+        "y": -102.5
+      },
+      "width": 309,
+      "height": 126,
+      "ports": [],
+      "inputs": [],
+      "outputs": [],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": "",
+        "complaint": "I've got a problem, forrest."
       }
     }
   ],
