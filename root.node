@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-28T17:26:02.302Z",
-    "modified": "2026-02-28T19:25:28.343Z",
+    "created": "2026-02-28T21:13:44.763Z",
+    "modified": "2026-02-28T21:24:53.825Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -166,7 +166,7 @@
         "nodeDefs": [
           {
             "key": "complaint",
-            "ref": "/tlz/project1/complaint.node-class.node",
+            "ref": "github://mikemartinez1974/shared/complaint.node-class.node",
             "source": "local",
             "version": ">=0.1.0"
           }
@@ -177,7 +177,7 @@
             "key": "complaint",
             "intent": "node",
             "payload": "node.web",
-            "ref": "/tlz/project1/complaint.node-class.node",
+            "ref": "github://mikemartinez1974/shared/complaint.node-class.node",
             "source": "local",
             "version": ">=0.1.0"
           },
@@ -185,7 +185,7 @@
             "key": "complaint",
             "intent": "editor",
             "payload": "editor.web",
-            "ref": "/tlz/project1/complaint.node-class.node",
+            "ref": "github://mikemartinez1974/shared/complaint.node-class.node",
             "source": "local",
             "version": ">=0.1.0"
           }
