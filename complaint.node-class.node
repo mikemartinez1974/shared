@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-28T17:26:02.302Z",
-    "modified": "2026-02-28T17:42:31.205Z",
+    "created": "2026-02-28T19:00:49.839Z",
+    "modified": "2026-02-28T19:12:22.908Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -105,10 +105,11 @@
             "repo": "",
             "path": "",
             "branch": "main",
-            "autoCreateRepo": true,
-            "repoVisibility": "private",
+            "autoCreateRepo": false,
+            "repoVisibility": "public",
             "seedOnCommit": false,
-            "enableGithubPages": false
+            "enableGithubPages": false,
+            "seedLandingPage": true
           },
           "autoSave": false
         }
@@ -184,8 +185,8 @@
       "type": "view",
       "label": "Node View (node.web)",
       "position": {
-        "x": 60,
-        "y": -220
+        "x": 56,
+        "y": -230
       },
       "width": 420,
       "height": 280,
@@ -198,7 +199,7 @@
         },
         "node": {
           "web": {
-            "markdown": "## Complaint: {{label}}\n\n**Severity:** {{data.severity}}  \n**Status:** {{data.status}}  \n**Reported By:** {{data.reportedBy}}\n\n{{data.complaint}}"
+            "markdown": "## Complaint: {{label}}\n\n**Severity:** {{data.severity}}  \n**Status:** {{data.status}}  \n**Reported By:** {{data.reportedBy}}\n\n{{data.complaint}}\n\n{{data.content}}\n\n{{data.markdown}}"
           }
         }
       }
@@ -231,6 +232,15 @@
                 "placeholder": "Describe the issue...",
                 "multiline": true,
                 "rows": 8
+              },
+              {
+                "key": "content",
+                "label": "Legacy Content (optional)",
+                "type": "markdown",
+                "path": "data.content",
+                "placeholder": "Optional fallback content",
+                "multiline": true,
+                "rows": 4
               },
               {
                 "key": "severity",
