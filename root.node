@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-02-28T17:26:02.302Z",
-    "modified": "2026-02-28T19:22:20.989Z",
+    "modified": "2026-02-28T19:25:28.343Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -167,12 +167,29 @@
           {
             "key": "complaint",
             "ref": "/tlz/project1/complaint.node-class.node",
-            "source": "codex",
-            "version": "1.0"
+            "source": "local",
+            "version": ">=0.1.0"
           }
         ],
         "skills": [],
-        "views": []
+        "views": [
+          {
+            "key": "complaint",
+            "intent": "node",
+            "payload": "node.web",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "complaint",
+            "intent": "editor",
+            "payload": "editor.web",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          }
+        ]
       }
     },
     {
