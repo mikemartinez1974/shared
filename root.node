@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-28T21:25:24.003Z",
-    "modified": "2026-02-28T21:27:04.772Z",
+    "created": "2026-02-28T21:27:48.747Z",
+    "modified": "2026-02-28T21:31:08.508Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -41,7 +41,8 @@
             "legend",
             "dictionary",
             "markdown",
-            "port"
+            "port",
+            "complaint"
           ],
           "portContracts": [
             "core"
@@ -167,7 +168,7 @@
           {
             "key": "complaint",
             "ref": "github://mikemartinez1974/shared/complaint.node-class.node",
-            "source": "local",
+            "source": "codex",
             "version": ">=0.1.0"
           }
         ],
@@ -178,7 +179,7 @@
             "intent": "node",
             "payload": "node.web",
             "ref": "github://mikemartinez1974/shared/complaint.node-class.node",
-            "source": "local",
+            "source": "codex",
             "version": ">=0.1.0"
           },
           {
@@ -186,7 +187,7 @@
             "intent": "editor",
             "payload": "editor.web",
             "ref": "github://mikemartinez1974/shared/complaint.node-class.node",
-            "source": "local",
+            "source": "codex",
             "version": ">=0.1.0"
           }
         ]
@@ -392,11 +393,11 @@
       "type": "complaint",
       "label": "complaint",
       "position": {
-        "x": -415.19875413222496,
-        "y": -113.21701141581514
+        "x": -409.19875413222496,
+        "y": -76.21701141581514
       },
-      "width": 309,
-      "height": 126,
+      "width": 301,
+      "height": 188,
       "ports": [],
       "inputs": [],
       "outputs": [],
