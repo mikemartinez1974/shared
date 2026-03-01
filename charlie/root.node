@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-03-01T01:19:33.792Z",
-    "modified": "2026-03-01T17:37:12.738Z",
+    "modified": "2026-03-01T17:39:32.269Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -101,8 +101,8 @@
             }
           },
           "github": {
-            "repo": "",
-            "path": "",
+            "repo": "mikemartinez1974/shared",
+            "path": "/charlie/root.node",
             "branch": "main",
             "autoCreateRepo": false,
             "repoVisibility": "private",
@@ -175,7 +175,7 @@
         "memo": "Bride of Charlie - Episode 1",
         "intent": "external",
         "target": {
-          "endpoint": "/tlz/project1/bride-of-charlie-ep1.node:root",
+          "endpoint": "github://mikemartinez1974/shared/charlie/bride-of-charlie-ep1.node:root",
           "mode": "navigate",
           "portId": "root"
         }
@@ -197,7 +197,7 @@
         "memo": "Bride of Charlie - Episode 2",
         "intent": "external",
         "target": {
-          "endpoint": "/tlz/project1/bride-of-charlie-ep2.node:root",
+          "endpoint": "github://mikemartinez1974/shared/charlie/bride-of-charlie-ep2.node:root",
           "mode": "navigate",
           "portId": "root"
         }
@@ -219,7 +219,7 @@
         "memo": "Bride of Charlie - Episode 3",
         "intent": "external",
         "target": {
-          "endpoint": "/tlz/project1/bride-of-charlie-ep3.node:root",
+          "endpoint": "github://mikemartinez1974/shared/charlie/bride-of-charlie-ep3.node:root",
           "mode": "navigate",
           "portId": "root"
         }
