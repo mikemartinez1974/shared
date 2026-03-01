@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-03-01T01:19:33.792Z",
-    "modified": "2026-03-01T04:49:00.933Z",
+    "modified": "2026-03-01T15:28:55.957Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -101,7 +101,7 @@
             }
           },
           "github": {
-            "repo": "",
+            "repo": "mikemartinez1974/shared",
             "path": "",
             "branch": "main",
             "autoCreateRepo": true,
@@ -718,7 +718,10 @@
       "sourcePort": "root",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -729,7 +732,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -740,7 +746,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -751,7 +760,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -762,7 +774,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -773,7 +788,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -784,7 +802,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -795,7 +816,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -806,7 +830,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -817,7 +844,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -828,7 +858,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -839,7 +872,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -850,7 +886,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -861,7 +900,10 @@
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -872,7 +914,10 @@
       "sourcePort": "root",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     },
     {
@@ -883,7 +928,10 @@
       "sourcePort": "root",
       "targetPort": "in",
       "label": "",
-      "style": {},
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
       "data": {}
     }
   ],
