@@ -1,0 +1,385 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "title": "Untitled Project",
+    "description": "",
+    "created": "2026-03-02T21:14:09.041Z",
+    "modified": "2026-03-02T21:14:59.358Z",
+    "author": "",
+    "tags": [],
+    "preferredViewer": "https://twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "life-manifest",
+      "type": "manifest",
+      "label": "Manifest",
+      "position": {
+        "x": -900,
+        "y": -240
+      },
+      "width": 420,
+      "height": 280,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "nodeclass-lifecycle-smoke",
+          "name": "NodeClass Lifecycle Smoke",
+          "version": "0.1.0",
+          "description": "Smoke test for onCreate/onLoad/onBeforeUpdate/onAfterUpdate/onDelete hooks.",
+          "createdAt": "2026-03-02T00:00:00.000Z",
+          "updatedAt": "2026-03-02T00:00:00.000Z"
+        },
+        "intent": {
+          "kind": "task",
+          "scope": "validation"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "manifest",
+            "dictionary",
+            "markdown",
+            "lifecycle-probe"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "layered",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "github": {
+            "repo": "",
+            "path": "",
+            "branch": "main",
+            "autoCreateRepo": true,
+            "repoVisibility": "private",
+            "seedOnCommit": false,
+            "enableGithubPages": false
+          },
+          "autoSave": false
+        }
+      }
+    },
+    {
+      "id": "life-dictionary",
+      "type": "dictionary",
+      "label": "Dictionary",
+      "position": {
+        "x": -900,
+        "y": 90
+      },
+      "width": 430,
+      "height": 320,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "nodeDefs": [
+          {
+            "key": "lifecycle-probe",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0",
+            "legend": {
+              "visible": true
+            },
+            "defaults": {
+              "label": "Lifecycle Probe",
+              "size": {
+                "width": 360,
+                "height": 220
+              },
+              "data": {
+                "complaint": "Lifecycle probe initialized.",
+                "status": "open",
+                "severity": "minor",
+                "reportedBy": "system"
+              }
+            },
+            "overrides": {
+              "allowLabel": true,
+              "allowSize": true,
+              "allowColor": true,
+              "allowPorts": true,
+              "allowData": true,
+              "dataMode": "merge-deep"
+            },
+            "validation": {
+              "requiredDataKeys": [
+                "data.complaint"
+              ],
+              "rules": [
+                {
+                  "id": "complaint-required",
+                  "kind": "required",
+                  "path": "data.complaint",
+                  "message": "complaint text required",
+                  "severity": "error"
+                }
+              ],
+              "onError": "warn"
+            },
+            "lifecycle": {
+              "hooks": {
+                "onCreate": {
+                  "kind": "script",
+                  "ref": "const logNodeId = 'lifecycle-log';\nconst now = new Date().toISOString();\nconst nodes = await api.getNodes();\nconst logNode = nodes.find((n) => n && n.id === logNodeId);\nif (!logNode) {\n  await api.log('warn', '[LifecycleSmoke] Missing lifecycle log node');\n  return { hook: 'onCreate', logged: false };\n}\nconst prev = String(logNode?.data?.markdown || '# Lifecycle Hook Log\\n\\n');\nconst line = '- ' + now + ' :: onCreate fired';\nawait api.updateNode(logNodeId, { data: { markdown: prev + '\\n' + line } });\nreturn { hook: 'onCreate', logged: true, at: now };",
+                  "timeoutMs": 2000
+                },
+                "onLoad": {
+                  "kind": "script",
+                  "ref": "const logNodeId = 'lifecycle-log';\nconst now = new Date().toISOString();\nconst nodes = await api.getNodes();\nconst logNode = nodes.find((n) => n && n.id === logNodeId);\nif (!logNode) {\n  await api.log('warn', '[LifecycleSmoke] Missing lifecycle log node');\n  return { hook: 'onLoad', logged: false };\n}\nconst prev = String(logNode?.data?.markdown || '# Lifecycle Hook Log\\n\\n');\nconst line = '- ' + now + ' :: onLoad fired';\nawait api.updateNode(logNodeId, { data: { markdown: prev + '\\n' + line } });\nreturn { hook: 'onLoad', logged: true, at: now };",
+                  "timeoutMs": 2000
+                },
+                "onBeforeUpdate": {
+                  "kind": "script",
+                  "ref": "const logNodeId = 'lifecycle-log';\nconst now = new Date().toISOString();\nconst nodes = await api.getNodes();\nconst logNode = nodes.find((n) => n && n.id === logNodeId);\nif (!logNode) {\n  await api.log('warn', '[LifecycleSmoke] Missing lifecycle log node');\n  return { hook: 'onBeforeUpdate', logged: false };\n}\nconst prev = String(logNode?.data?.markdown || '# Lifecycle Hook Log\\n\\n');\nconst line = '- ' + now + ' :: onBeforeUpdate fired';\nawait api.updateNode(logNodeId, { data: { markdown: prev + '\\n' + line } });\nreturn { hook: 'onBeforeUpdate', logged: true, at: now };",
+                  "timeoutMs": 2000
+                },
+                "onAfterUpdate": {
+                  "kind": "script",
+                  "ref": "const logNodeId = 'lifecycle-log';\nconst now = new Date().toISOString();\nconst nodes = await api.getNodes();\nconst logNode = nodes.find((n) => n && n.id === logNodeId);\nif (!logNode) {\n  await api.log('warn', '[LifecycleSmoke] Missing lifecycle log node');\n  return { hook: 'onAfterUpdate', logged: false };\n}\nconst prev = String(logNode?.data?.markdown || '# Lifecycle Hook Log\\n\\n');\nconst line = '- ' + now + ' :: onAfterUpdate fired';\nawait api.updateNode(logNodeId, { data: { markdown: prev + '\\n' + line } });\nreturn { hook: 'onAfterUpdate', logged: true, at: now };",
+                  "timeoutMs": 2000
+                },
+                "onDelete": {
+                  "kind": "script",
+                  "ref": "const logNodeId = 'lifecycle-log';\nconst now = new Date().toISOString();\nconst nodes = await api.getNodes();\nconst logNode = nodes.find((n) => n && n.id === logNodeId);\nif (!logNode) {\n  await api.log('warn', '[LifecycleSmoke] Missing lifecycle log node');\n  return { hook: 'onDelete', logged: false };\n}\nconst prev = String(logNode?.data?.markdown || '# Lifecycle Hook Log\\n\\n');\nconst line = '- ' + now + ' :: onDelete fired';\nawait api.updateNode(logNodeId, { data: { markdown: prev + '\\n' + line } });\nreturn { hook: 'onDelete', logged: true, at: now };",
+                  "timeoutMs": 2000
+                }
+              }
+            }
+          }
+        ],
+        "skills": [],
+        "views": [
+          {
+            "key": "lifecycle-probe",
+            "intent": "node",
+            "payload": "node.web",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "lifecycle-probe",
+            "intent": "editor",
+            "payload": "editor.web",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "life-steps",
+      "type": "markdown",
+      "label": "Test Procedure",
+      "position": {
+        "x": -360,
+        "y": -240
+      },
+      "width": 620,
+      "height": 330,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Lifecycle Smoke Procedure\n\n1. Open this graph and check **Lifecycle Hook Log** for `onLoad`.\n2. Add a new `lifecycle-probe` node from Legend to trigger `onCreate`.\n3. Edit `complaint` text on any `lifecycle-probe` node to trigger update hooks.\n4. Delete a `lifecycle-probe` node to trigger `onDelete`.\n\nExpected: each action appends a line to the log node."
+      }
+    },
+    {
+      "id": "lifecycle-log",
+      "type": "markdown",
+      "label": "Lifecycle Hook Log",
+      "position": {
+        "x": -360,
+        "y": 130
+      },
+      "width": 620,
+      "height": 360,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Lifecycle Hook Log\n\n(Waiting for hooks to append entries...)\n- 2026-03-02T19:59:35.752Z :: onCreate fired\n- 2026-03-02T19:59:36.034Z :: onLoad fired"
+      }
+    },
+    {
+      "id": "life-probe-1",
+      "type": "lifecycle-probe",
+      "label": "Probe Instance A",
+      "position": {
+        "x": 340,
+        "y": -60
+      },
+      "width": 380,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "complaint": "Initial probe instance",
+        "status": "open",
+        "severity": "minor",
+        "reportedBy": "smoke-test"
+      }
+    },
+    {
+      "id": "life-results",
+      "type": "markdown",
+      "label": "Pass/Fail Notes",
+      "position": {
+        "x": 780,
+        "y": 130
+      },
+      "width": 430,
+      "height": 300,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Pass/Fail Notes\n\n- onLoad: pending\n- onCreate: pending\n- onBeforeUpdate: pending\n- onAfterUpdate: pending\n- onDelete: pending\n\nRecord results after exercising actions."
+      }
+    },
+    {
+      "id": "8ee644a5-f928-41a6-ad20-9ecbb6de93ea",
+      "type": "lifecycle-probe",
+      "label": "New Node",
+      "position": {
+        "x": -833,
+        "y": 439.5
+      },
+      "width": 200,
+      "height": 120,
+      "color": "#1976d2",
+      "ports": [],
+      "inputs": [],
+      "outputs": [],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "complaint": "Lifecycle probe initialized.",
+        "status": "open",
+        "severity": "minor",
+        "reportedBy": "system",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "life-edge-1",
+      "type": "relates",
+      "source": "life-manifest",
+      "target": "life-dictionary",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "defines",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "life-edge-2",
+      "type": "relates",
+      "source": "life-steps",
+      "target": "life-probe-1",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "exercise",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "life-edge-3",
+      "type": "relates",
+      "source": "life-probe-1",
+      "target": "lifecycle-log",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "writes",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "life-edge-4",
+      "type": "relates",
+      "source": "lifecycle-log",
+      "target": "life-results",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "verify",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    }
+  ],
+  "clusters": [],
+  "scripts": []
+}
