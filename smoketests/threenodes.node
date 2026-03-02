@@ -1,0 +1,411 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "title": "Untitled Project",
+    "description": "",
+    "created": "2026-03-02T19:38:25.252Z",
+    "modified": "2026-03-02T21:11:35.042Z",
+    "author": "",
+    "tags": [],
+    "preferredViewer": "https://twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "smoke-manifest",
+      "type": "manifest",
+      "label": "Manifest",
+      "position": {
+        "x": -860,
+        "y": -240
+      },
+      "width": 420,
+      "height": 280,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "nodeclass-three-smoke",
+          "name": "NodeClass 3-Class Smoke",
+          "version": "0.1.0",
+          "description": "Smoke graph for complaint, youtube-embedded, and graph-reference classes.",
+          "createdAt": "2026-03-02T00:00:00.000Z",
+          "updatedAt": "2026-03-02T00:00:00.000Z"
+        },
+        "intent": {
+          "kind": "task",
+          "scope": "validation"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "manifest",
+            "dictionary",
+            "markdown",
+            "complaint",
+            "youtube-embedded",
+            "graph-reference"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "layered",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "github": {
+            "repo": "",
+            "path": "",
+            "branch": "main",
+            "autoCreateRepo": true,
+            "repoVisibility": "private",
+            "seedOnCommit": false,
+            "enableGithubPages": false
+          },
+          "autoSave": false
+        }
+      }
+    },
+    {
+      "id": "smoke-dictionary",
+      "type": "dictionary",
+      "label": "Dictionary",
+      "position": {
+        "x": -860,
+        "y": 90
+      },
+      "width": 420,
+      "height": 290,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "nodeDefs": [
+          {
+            "key": "complaint",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0",
+            "legend": {
+              "visible": true
+            }
+          },
+          {
+            "key": "youtube-embedded",
+            "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0",
+            "legend": {
+              "visible": true
+            }
+          },
+          {
+            "key": "graph-reference",
+            "ref": "/library/classes/nodes/graph-reference.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0",
+            "legend": {
+              "visible": true
+            }
+          }
+        ],
+        "skills": [],
+        "views": [
+          {
+            "key": "complaint",
+            "intent": "node",
+            "payload": "node.web",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "complaint",
+            "intent": "editor",
+            "payload": "editor.web",
+            "ref": "/tlz/project1/complaint.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "youtube-embedded",
+            "intent": "node",
+            "payload": "node.web",
+            "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "youtube-embedded",
+            "intent": "editor",
+            "payload": "editor.web",
+            "ref": "/library/classes/nodes/youtube-embedded.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "graph-reference",
+            "intent": "node",
+            "payload": "node.web",
+            "ref": "/library/classes/nodes/graph-reference.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          },
+          {
+            "key": "graph-reference",
+            "intent": "editor",
+            "payload": "editor.web",
+            "ref": "/library/classes/nodes/graph-reference.node-class.node",
+            "source": "local",
+            "version": ">=0.1.0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "smoke-guide",
+      "type": "markdown",
+      "label": "Smoke Steps",
+      "position": {
+        "x": -360,
+        "y": -240
+      },
+      "width": 620,
+      "height": 300,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# NodeClass Smoke Test\n\n1. Verify no Dictionary/NodeClass contract errors in Validation tab.\n2. Confirm each custom node renders non-blank:\n   - complaint\n   - youtube-embedded\n   - graph-reference\n3. Open editor panel for each and confirm fields are editable.\n4. Save/reload graph and confirm rendering persists.\n\nExpected: all three classes resolve both node.web and editor.web."
+      }
+    },
+    {
+      "id": "smoke-complaint",
+      "type": "complaint",
+      "label": "Complaint Sample",
+      "position": {
+        "x": 320,
+        "y": -220
+      },
+      "width": 360,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "complaint": "Smoke test complaint text.",
+        "severity": "moderate",
+        "status": "open",
+        "reportedBy": "smoke-test"
+      }
+    },
+    {
+      "id": "smoke-youtube",
+      "type": "youtube-embedded",
+      "label": "YouTube Sample",
+      "position": {
+        "x": 320,
+        "y": 40
+      },
+      "width": 420,
+      "height": 260,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "videoId": "BzyQ6SWVaxU",
+        "autoplay": false,
+        "startSeconds": 0
+      }
+    },
+    {
+      "id": "smoke-graph-ref",
+      "type": "graph-reference",
+      "label": "Graph Ref Sample",
+      "position": {
+        "x": 320,
+        "y": 360
+      },
+      "width": 420,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "ref": "/root.node",
+        "src": "/root.node",
+        "endpoint": "/root.node:root",
+        "mode": "embed"
+      }
+    },
+    {
+      "id": "smoke-results",
+      "type": "markdown",
+      "label": "Results",
+      "position": {
+        "x": 820,
+        "y": 40
+      },
+      "width": 440,
+      "height": 340,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Results\n\n- complaint: pending\n- youtube-embedded: pending\n- graph-reference: pending\n\n## Notes\nRecord pass/fail + any rendering or editor issues here."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-001",
+      "type": "relates",
+      "source": "smoke-manifest",
+      "target": "smoke-dictionary",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "defines",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-002",
+      "type": "relates",
+      "source": "smoke-guide",
+      "target": "smoke-complaint",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "test",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-003",
+      "type": "relates",
+      "source": "smoke-guide",
+      "target": "smoke-youtube",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "test",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-004",
+      "type": "relates",
+      "source": "smoke-guide",
+      "target": "smoke-graph-ref",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "test",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-005",
+      "type": "relates",
+      "source": "smoke-complaint",
+      "target": "smoke-results",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "report",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-006",
+      "type": "relates",
+      "source": "smoke-youtube",
+      "target": "smoke-results",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "report",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-007",
+      "type": "relates",
+      "source": "smoke-graph-ref",
+      "target": "smoke-results",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "report",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    }
+  ],
+  "clusters": [],
+  "scripts": []
+}
