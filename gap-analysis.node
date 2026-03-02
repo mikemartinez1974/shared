@@ -1,0 +1,429 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "title": "Untitled Project",
+    "description": "",
+    "created": "2026-03-02T00:40:37.039Z",
+    "modified": "2026-03-02T00:57:36.110Z",
+    "author": "",
+    "tags": [],
+    "preferredViewer": "https://twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "n-manifest",
+      "type": "manifest",
+      "label": "Manifest",
+      "position": {
+        "x": -900,
+        "y": -260
+      },
+      "width": 420,
+      "height": 280,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "nodeclass-abstraction-gap-analysis",
+          "name": "NodeClass Abstraction Gap Analysis",
+          "version": "0.1.0",
+          "description": "Task graph for closing NodeClass abstraction gaps before package-scale distribution.",
+          "createdAt": "2026-03-01T00:00:00.000Z",
+          "updatedAt": "2026-03-01T00:00:00.000Z"
+        },
+        "intent": {
+          "kind": "task",
+          "scope": "architecture"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "manifest",
+            "dictionary",
+            "markdown"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "layered",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "github": {
+            "repo": "",
+            "path": "",
+            "branch": "main",
+            "autoCreateRepo": false,
+            "repoVisibility": "private",
+            "seedOnCommit": false,
+            "enableGithubPages": false
+          },
+          "autoSave": false
+        }
+      }
+    },
+    {
+      "id": "n-dictionary",
+      "type": "dictionary",
+      "label": "Dictionary",
+      "position": {
+        "x": -900,
+        "y": 60
+      },
+      "width": 360,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "nodeDefs": [],
+        "skills": [],
+        "views": []
+      }
+    },
+    {
+      "id": "n-goal",
+      "type": "markdown",
+      "label": "Goal & Scope",
+      "position": {
+        "x": -420,
+        "y": -260
+      },
+      "width": 500,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Goal\nDefine NodeClass as a **stable abstraction boundary** so external classes can be authored, validated, versioned, and dropped into any graph predictably.\n\n## Output\n- Crisp contract\n- Deterministic runtime behavior\n- Backward-compatible rollout"
+      }
+    },
+    {
+      "id": "n-capabilities",
+      "type": "markdown",
+      "label": "Required Capabilities",
+      "position": {
+        "x": 140,
+        "y": -260
+      },
+      "width": 520,
+      "height": 340,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Must Support\n- Custom editor view\n- Custom node view\n- Default ports\n- Custom data schema\n- Validation logic\n- Override rules\n- Lifecycle hooks (if enabled)\n\nEach capability must define:\n1. authoring shape\n2. load/resolve path\n3. runtime behavior\n4. failure mode"
+      }
+    },
+    {
+      "id": "n-open-questions",
+      "type": "markdown",
+      "label": "Open Questions",
+      "position": {
+        "x": 713.9699849235622,
+        "y": -264.0200100509586
+      },
+      "width": 520,
+      "height": 340,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Questions To Close\n1. Where schema is declared (`dictionary` vs class-local contract)?\n2. Can host graph override defaults safely?\n3. What is the precedence chain (class -> instance -> runtime)?\n4. Which hooks are supported at launch?\n5. How are validation failures surfaced to users?\n6. What parts are immutable after class publish?"
+      }
+    },
+    {
+      "id": "n-blockers",
+      "type": "markdown",
+      "label": "Current Blockers",
+      "position": {
+        "x": 140,
+        "y": 140
+      },
+      "width": 520,
+      "height": 300,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Blockers\n- NodeClass contract fields not formalized end-to-end\n- Validation behavior not consistently enforced\n- Override semantics partially implicit\n- Lifecycle support unclear/unbounded\n- Incomplete acceptance test matrix for class drop-in"
+      }
+    },
+    {
+      "id": "n-plan",
+      "type": "markdown",
+      "label": "Implementation Plan",
+      "position": {
+        "x": 720,
+        "y": 140
+      },
+      "width": 520,
+      "height": 360,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Minimal Safe Plan\n1. Freeze `NodeClassContract v1` schema\n2. Implement loader + resolver with strict precedence\n3. Add validator (load-time + save-time)\n4. Add runtime guardrails and explicit errors\n5. Add compatibility layer for legacy classes\n6. Build smoke suite for custom classes\n7. Publish migration guide"
+      }
+    },
+    {
+      "id": "n-acceptance",
+      "type": "markdown",
+      "label": "Definition of Done",
+      "position": {
+        "x": 140,
+        "y": 520
+      },
+      "width": 520,
+      "height": 300,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Done When\n- A third-party class with custom editor/node views loads cleanly\n- Defaults + overrides resolve deterministically\n- Invalid class fails with actionable diagnostics\n- Same class runs in multiple graphs without side effects\n- Class behavior is version-aware and reproducible"
+      }
+    },
+    {
+      "id": "n-test-matrix",
+      "type": "markdown",
+      "label": "Test Matrix",
+      "position": {
+        "x": 720,
+        "y": 560
+      },
+      "width": 520,
+      "height": 280,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Test Matrix\n- Local class ref\n- github:// class ref\n- Missing view payload\n- Invalid schema type\n- Port default mismatch\n- Override collision\n- Hook error handling\n- Legacy class fallback"
+      }
+    },
+    {
+      "id": "n-next-actions",
+      "type": "markdown",
+      "label": "Next Actions",
+      "position": {
+        "x": -420,
+        "y": 60
+      },
+      "width": 500,
+      "height": 240,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Next Actions\n1. Draft `NodeClassContract v1` JSON shape\n2. Map current code paths to contract fields\n3. Implement validation surface in editor\n4. Build one canonical sample class per capability"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-001",
+      "type": "relates",
+      "source": "n-goal",
+      "target": "n-capabilities",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-002",
+      "type": "relates",
+      "source": "n-capabilities",
+      "target": "n-open-questions",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-003",
+      "type": "relates",
+      "source": "n-goal",
+      "target": "n-next-actions",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-004",
+      "type": "relates",
+      "source": "n-open-questions",
+      "target": "n-blockers",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-005",
+      "type": "relates",
+      "source": "n-blockers",
+      "target": "n-plan",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-006",
+      "type": "relates",
+      "source": "n-plan",
+      "target": "n-acceptance",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-007",
+      "type": "relates",
+      "source": "n-plan",
+      "target": "n-test-matrix",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-008",
+      "type": "relates",
+      "source": "n-next-actions",
+      "target": "n-blockers",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-009",
+      "type": "relates",
+      "source": "n-manifest",
+      "target": "n-goal",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    },
+    {
+      "id": "edge-010",
+      "type": "relates",
+      "source": "n-manifest",
+      "target": "n-dictionary",
+      "sourcePort": "root",
+      "targetPort": "root",
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved",
+        "width": 2
+      },
+      "data": {}
+    }
+  ],
+  "clusters": [],
+  "scripts": [
+    {
+      "id": "script_1761684730975",
+      "name": "New Script",
+      "source": "// Write your script here\n// Available API:\n//   api.getNodes()\n//   api.getNode(id)\n//   api.getEdges()\n//   api.createNode(data)\n//   api.updateNode(id, patch)\n//   api.deleteNode(id)\n//   api.createEdge(data)\n//   api.deleteEdge(id)\n//   api.log(level, message)\n\nconst nodes = await api.getNodes();\nreturn { count: nodes.length };",
+      "tags": ""
+    },
+    {
+      "id": "script_1761684295367",
+      "name": "Mike",
+      "source": "console.clear();\nconst nodes = await api.getNodes();\nconsole.log(\"Mike\");\nreturn { count: nodes.length };",
+      "tags": ""
+    }
+  ]
+}
