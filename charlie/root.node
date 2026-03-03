@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-03-03T00:55:14.405Z",
-    "modified": "2026-03-03T02:21:42.807Z",
+    "modified": "2026-03-03T04:01:53.855Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -164,8 +164,8 @@
       "type": "graph-reference",
       "label": "Episode 1",
       "position": {
-        "x": -82.95008539560322,
-        "y": 226.11364272627625
+        "x": -140.15608538668081,
+        "y": 227.28111211384928
       },
       "width": 260,
       "height": 140,
@@ -198,8 +198,8 @@
       "type": "graph-reference",
       "label": "Episode 2",
       "position": {
-        "x": 240,
-        "y": 229.17365411235667
+        "x": 157.10967348231617,
+        "y": 246.68569492595185
       },
       "width": 260,
       "height": 140,
@@ -232,8 +232,8 @@
       "type": "graph-reference",
       "label": "Episode 3",
       "position": {
-        "x": 544.1317294382167,
-        "y": 204.38327748305693
+        "x": 453.0691172075217,
+        "y": 286.1061346131678
       },
       "width": 260,
       "height": 140,
@@ -259,6 +259,42 @@
           "mode": "navigate",
           "portId": "root"
         }
+      }
+    },
+    {
+      "id": "78ee9936-18a4-4336-a08e-a5fcb82fd4ea",
+      "type": "graph-reference",
+      "label": "Graph Reference",
+      "position": {
+        "x": 806.3775086927739,
+        "y": 184.42671940805315
+      },
+      "width": 420,
+      "height": 300,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "root",
+          "label": "root",
+          "direction": "bidirectional",
+          "dataType": "any",
+          "position": {
+            "side": "top",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [],
+      "outputs": [],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "memo": "",
+        "link": "",
+        "src": "github://mikemartinez1974/shared/charlie/bride-of-charlie-ep4.node:root",
+        "mode": "interactive",
+        "html": "",
+        "svg": ""
       }
     }
   ],
@@ -307,6 +343,30 @@
         "width": 2
       },
       "data": {}
+    },
+    {
+      "id": "edge_1772504716047",
+      "type": "default",
+      "source": "b145df91-5f53-4b77-8de2-d0f5de6be003",
+      "target": "78ee9936-18a4-4336-a08e-a5fcb82fd4ea",
+      "sourcePort": "out",
+      "targetPort": "root",
+      "portMeta": {
+        "source": {
+          "label": "Out",
+          "type": "content"
+        },
+        "target": {
+          "label": "root",
+          "type": "any"
+        }
+      },
+      "label": "",
+      "style": {
+        "curved": true,
+        "route": "curved"
+      },
+      "data": {}
     }
   ],
   "clusters": [],
@@ -315,12 +375,6 @@
       "id": "script_1761684730975",
       "name": "New Script",
       "source": "// Write your script here\n// Available API:\n//   api.getNodes()\n//   api.getNode(id)\n//   api.getEdges()\n//   api.createNode(data)\n//   api.updateNode(id, patch)\n//   api.deleteNode(id)\n//   api.createEdge(data)\n//   api.deleteEdge(id)\n//   api.log(level, message)\n\nconst nodes = await api.getNodes();\nreturn { count: nodes.length };",
-      "tags": ""
-    },
-    {
-      "id": "script_1761684295367",
-      "name": "Mike",
-      "source": "console.clear();\nconst nodes = await api.getNodes();\nconsole.log(\"Mike\");\nreturn { count: nodes.length };",
       "tags": ""
     }
   ]
