@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-03-03T00:55:14.405Z",
-    "modified": "2026-03-03T04:01:53.855Z",
+    "created": "2026-03-03T20:40:01.523Z",
+    "modified": "2026-03-03T20:56:12.407Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -161,7 +161,7 @@
     },
     {
       "id": "9c481165-657a-4f0f-b72f-1b6a5c3e2004",
-      "type": "graph-reference",
+      "type": "port",
       "label": "Episode 1",
       "position": {
         "x": -140.15608538668081,
@@ -195,11 +195,11 @@
     },
     {
       "id": "3f973f36-3fa0-4236-b856-75f9f6186005",
-      "type": "graph-reference",
+      "type": "port",
       "label": "Episode 2",
       "position": {
-        "x": 157.10967348231617,
-        "y": 246.68569492595185
+        "x": 156.86348676257498,
+        "y": 245.76249469170514
       },
       "width": 260,
       "height": 140,
@@ -229,11 +229,11 @@
     },
     {
       "id": "31dc9dd5-15c0-4ce5-a4cb-bcf30d95b006",
-      "type": "graph-reference",
+      "type": "port",
       "label": "Episode 3",
       "position": {
-        "x": 453.0691172075217,
-        "y": 286.1061346131678
+        "x": 453.99231744176836,
+        "y": 285.1829343789211
       },
       "width": 260,
       "height": 140,
@@ -263,11 +263,11 @@
     },
     {
       "id": "78ee9936-18a4-4336-a08e-a5fcb82fd4ea",
-      "type": "graph-reference",
+      "type": "port",
       "label": "Graph Reference",
       "position": {
         "x": 806.3775086927739,
-        "y": 184.42671940805315
+        "y": 183.50351917380644
       },
       "width": 420,
       "height": 300,
@@ -375,6 +375,12 @@
       "id": "script_1761684730975",
       "name": "New Script",
       "source": "// Write your script here\n// Available API:\n//   api.getNodes()\n//   api.getNode(id)\n//   api.getEdges()\n//   api.createNode(data)\n//   api.updateNode(id, patch)\n//   api.deleteNode(id)\n//   api.createEdge(data)\n//   api.deleteEdge(id)\n//   api.log(level, message)\n\nconst nodes = await api.getNodes();\nreturn { count: nodes.length };",
+      "tags": ""
+    },
+    {
+      "id": "script_1761684295367",
+      "name": "Mike",
+      "source": "console.clear();\nconst nodes = await api.getNodes();\nconsole.log(\"Mike\");\nreturn { count: nodes.length };",
       "tags": ""
     }
   ]
