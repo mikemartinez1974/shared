@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-03-01T18:17:16.259Z",
-    "modified": "2026-03-01T18:36:51.004Z",
+    "created": "2026-03-03T00:55:14.405Z",
+    "modified": "2026-03-03T02:21:42.807Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -161,11 +161,11 @@
     },
     {
       "id": "9c481165-657a-4f0f-b72f-1b6a5c3e2004",
-      "type": "port",
+      "type": "graph-reference",
       "label": "Episode 1",
       "position": {
         "x": -82.95008539560322,
-        "y": 226.93998861391958
+        "y": 226.11364272627625
       },
       "width": 260,
       "height": 140,
@@ -195,11 +195,11 @@
     },
     {
       "id": "3f973f36-3fa0-4236-b856-75f9f6186005",
-      "type": "port",
+      "type": "graph-reference",
       "label": "Episode 2",
       "position": {
         "x": 240,
-        "y": 230
+        "y": 229.17365411235667
       },
       "width": 260,
       "height": 140,
@@ -229,11 +229,11 @@
     },
     {
       "id": "31dc9dd5-15c0-4ce5-a4cb-bcf30d95b006",
-      "type": "port",
+      "type": "graph-reference",
       "label": "Episode 3",
       "position": {
-        "x": 540,
-        "y": 230
+        "x": 544.1317294382167,
+        "y": 204.38327748305693
       },
       "width": 260,
       "height": 140,
