@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-03-03T20:40:01.523Z",
-    "modified": "2026-03-03T20:56:12.407Z",
+    "created": "2026-03-19T21:29:15.166Z",
+    "modified": "2026-03-19T21:32:28.678Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -266,8 +266,8 @@
       "type": "port",
       "label": "Graph Reference",
       "position": {
-        "x": 806.3775086927739,
-        "y": 183.50351917380644
+        "x": 1097.377508692774,
+        "y": 95.50351917380644
       },
       "width": 420,
       "height": 300,
@@ -292,9 +292,13 @@
         "memo": "",
         "link": "",
         "src": "github://mikemartinez1974/shared/charlie/bride-of-charlie-ep4.node:root",
-        "mode": "interactive",
+        "mode": "expand",
         "html": "",
-        "svg": ""
+        "svg": "",
+        "_semanticLevel": "detail",
+        "target": {
+          "mode": "expand"
+        }
       }
     }
   ],
