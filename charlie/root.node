@@ -4,7 +4,7 @@
     "title": "Untitled Project",
     "description": "",
     "created": "2026-03-19T21:29:15.166Z",
-    "modified": "2026-03-19T21:32:28.678Z",
+    "modified": "2026-03-19T21:32:53.782Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -107,7 +107,8 @@
             "autoCreateRepo": false,
             "repoVisibility": "private",
             "seedOnCommit": false,
-            "enableGithubPages": false
+            "enableGithubPages": false,
+            "installationId": "117641611"
           },
           "autoSave": false
         }
@@ -292,12 +293,12 @@
         "memo": "",
         "link": "",
         "src": "github://mikemartinez1974/shared/charlie/bride-of-charlie-ep4.node:root",
-        "mode": "expand",
+        "mode": "navigate",
         "html": "",
         "svg": "",
         "_semanticLevel": "detail",
         "target": {
-          "mode": "expand"
+          "mode": "navigate"
         }
       }
     }
