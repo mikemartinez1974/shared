@@ -3,8 +3,8 @@
   "metadata": {
     "title": "Untitled Project",
     "description": "",
-    "created": "2026-02-28T21:27:48.747Z",
-    "modified": "2026-02-28T21:33:10.536Z",
+    "created": "2026-03-20T05:36:20.756Z",
+    "modified": "2026-03-20T05:37:17.270Z",
     "author": "",
     "tags": [],
     "preferredViewer": "https://twilite.zone"
@@ -311,45 +311,6 @@
       }
     },
     {
-      "id": "a7a7a7a7-a7a7-4a7a-8a7a-a7a7a7a7a7a7",
-      "type": "port",
-      "label": "The Pitch",
-      "position": {
-        "x": -100,
-        "y": 440
-      },
-      "width": 280,
-      "height": 180,
-      "color": "#c62828",
-      "ports": [
-        {
-          "id": "in",
-          "label": "In",
-          "direction": "input",
-          "dataType": "content",
-          "position": {
-            "side": "top",
-            "offset": 0.5
-          }
-        }
-      ],
-      "visible": true,
-      "showLabel": true,
-      "data": {
-        "memo": "Project story and vision",
-        "intent": "external",
-        "target": {
-          "endpoint": "/ThePitch.node:root",
-          "mode": "navigate",
-          "url": "",
-          "graphId": "",
-          "nodeId": "",
-          "portId": "root",
-          "label": "Open"
-        }
-      }
-    },
-    {
       "id": "b8b8b8b8-b8b8-4b8b-8b8b-b8b8b8b8b8b8",
       "type": "port",
       "label": "Sample Repository",
@@ -443,20 +404,6 @@
       "type": "reference",
       "source": "d4d4d4d4-d4d4-4d4d-8d4d-d4d4d4d4d4d4",
       "target": "f6f6f6f6-f6f6-4f6f-8f6f-f6f6f6f6f6f6",
-      "sourcePort": "out",
-      "targetPort": "in",
-      "label": "",
-      "style": {
-        "curved": true,
-        "route": "curved"
-      },
-      "data": {}
-    },
-    {
-      "id": "edge-004",
-      "type": "reference",
-      "source": "d4d4d4d4-d4d4-4d4d-8d4d-d4d4d4d4d4d4",
-      "target": "a7a7a7a7-a7a7-4a7a-8a7a-a7a7a7a7a7a7",
       "sourcePort": "out",
       "targetPort": "in",
       "label": "",
