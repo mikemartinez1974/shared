@@ -1,0 +1,681 @@
+{
+  "fileVersion": "1.0",
+  "metadata": {
+    "title": "Untitled Project",
+    "description": "",
+    "created": "2026-03-21T18:36:24.134Z",
+    "modified": "2026-03-21T19:32:39.149Z",
+    "author": "",
+    "tags": [],
+    "preferredViewer": "https://twilite.zone"
+  },
+  "nodes": [
+    {
+      "id": "369c5525-9e09-4d55-8480-d44a1143c208",
+      "type": "manifest",
+      "label": "Manifest",
+      "position": {
+        "x": -260,
+        "y": -160
+      },
+      "width": 360,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "identity": {
+          "graphId": "cd3386c5-e8ec-445a-93aa-5ae095c82ad4",
+          "name": "Untitled Graph",
+          "version": "0.1.0",
+          "description": "",
+          "createdAt": "2026-03-21T19:30:19.962Z",
+          "updatedAt": "2026-03-21T19:30:19.962Z"
+        },
+        "intent": {
+          "kind": "graph",
+          "scope": "mixed"
+        },
+        "dependencies": {
+          "nodeTypes": [
+            "manifest",
+            "dictionary",
+            "default",
+            "markdown"
+          ],
+          "portContracts": [
+            "core"
+          ],
+          "skills": [],
+          "schemaVersions": {
+            "nodes": ">=1.0.0",
+            "ports": ">=1.0.0"
+          },
+          "optional": []
+        },
+        "authority": {
+          "mutation": {
+            "allowCreate": true,
+            "allowUpdate": true,
+            "allowDelete": true,
+            "appendOnly": false
+          },
+          "actors": {
+            "humans": true,
+            "agents": true,
+            "tools": true
+          },
+          "styleAuthority": "descriptive",
+          "history": {
+            "rewriteAllowed": false,
+            "squashAllowed": false
+          }
+        },
+        "document": {
+          "url": ""
+        },
+        "settings": {
+          "theme": null,
+          "backgroundImage": null,
+          "uiDensity": "comfortable",
+          "defaultNodeColor": "#1976d2",
+          "defaultEdgeColor": "#666666",
+          "snapToGrid": false,
+          "gridSize": 20,
+          "edgeRouting": "auto",
+          "layout": {
+            "mode": "autoOnMissingPositions",
+            "defaultLayout": "radial",
+            "direction": "DOWN",
+            "edgeLaneGapPx": 10,
+            "serpentine": {
+              "maxPerRow": 6
+            },
+            "cycleFallback": {
+              "enabled": true
+            },
+            "elk": {
+              "algorithm": "fixed",
+              "edgeRouting": "ORTHOGONAL",
+              "portConstraints": "FIXED_SIDE",
+              "nodeSpacing": 120,
+              "layeredEdgeSpacing": 80
+            }
+          },
+          "github": {
+            "repo": "mikemartinez1974/shared",
+            "path": "/things-to-watch.node",
+            "branch": "main",
+            "autoCreateRepo": true,
+            "repoVisibility": "private",
+            "seedOnCommit": false,
+            "enableGithubPages": false,
+            "installationId": "117641611"
+          },
+          "autoSave": false
+        }
+      }
+    },
+    {
+      "id": "9f43d65c-14d0-4c4f-a3c9-a2075ec7d923",
+      "type": "dictionary",
+      "label": "Dictionary",
+      "position": {
+        "x": -260,
+        "y": 100
+      },
+      "width": 320,
+      "height": 220,
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "nodeDefs": [],
+        "skills": [],
+        "views": []
+      }
+    },
+    {
+      "id": "a1f0c9b2-9b6d-4d1e-8c2f-1a2b3c4d5e01",
+      "type": "markdown",
+      "label": "AI Architecture Shift",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "width": 420,
+      "height": 240,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "in",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "in",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# AI Architecture Shift\n\nTranscript distilled into signal vs noise.\n\nCore question:\nIs this a threat, or just evolution?",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    },
+    {
+      "id": "b2e1d0c3-8a7f-4c2e-9d1b-2b3c4d5e6f02",
+      "type": "markdown",
+      "label": "Real Signals",
+      "position": {
+        "x": 500,
+        "y": -200
+      },
+      "width": 420,
+      "height": 260,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "in",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "in",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Real Signals\n\n- Transformers have scaling limits\n- Hybrid architectures emerging\n- Memory-based systems rising\n- AI cost likely to drop\n- Agents + modular systems increasing",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    },
+    {
+      "id": "c3f2e1d4-7b6a-4e3f-8c2d-3c4d5e6f7a03",
+      "type": "markdown",
+      "label": "Noise / Hype",
+      "position": {
+        "x": 500,
+        "y": 150
+      },
+      "width": 420,
+      "height": 240,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "in",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "in",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Noise / Hype\n\n- \"Transformers are dying soon\"\n- AGI imminent claims\n- Overly compressed timelines\n\nReality:\nEvolution, not sudden replacement",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    },
+    {
+      "id": "d4a3b2c1-6c5d-4f4a-9b3e-4d5e6f7a8b04",
+      "type": "markdown",
+      "label": "What To Watch",
+      "position": {
+        "x": 1000,
+        "y": -50
+      },
+      "width": 420,
+      "height": 260,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "in",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "in",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# What To Watch\n\n- Memory-augmented models\n- Hybrid architectures\n- Cost collapse of AI\n- Agent ecosystems\n\nThese determine real disruption",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    },
+    {
+      "id": "e5b4c3d2-5e4f-4a5b-8c4f-5e6f7a8b9c05",
+      "type": "markdown",
+      "label": "Implication For Twilite",
+      "position": {
+        "x": 1500,
+        "y": -50
+      },
+      "width": 460,
+      "height": 300,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "in",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "in",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# Implication For Twilite\n\n- You are ABOVE model layer\n- Architecture changes don't break you\n\nTwilite aligns with:\n- Memory systems\n- Modular experts (nodes)\n- Structured knowledge\n\nPosition:\n\"Control plane for AI systems\"",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    },
+    {
+      "id": "f6c5d4e3-4f3a-4b6c-9d5f-6f7a8b9c0d06",
+      "type": "markdown",
+      "label": "3D / Apple Angle",
+      "position": {
+        "x": 1000,
+        "y": 300
+      },
+      "width": 420,
+      "height": 240,
+      "color": "#1976d2",
+      "ports": [
+        {
+          "id": "in",
+          "label": "in",
+          "direction": "input",
+          "dataType": "any",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        },
+        {
+          "id": "out",
+          "label": "out",
+          "direction": "output",
+          "dataType": "any",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "key": "in",
+          "label": "in",
+          "type": "any"
+        }
+      ],
+      "outputs": [
+        {
+          "key": "out",
+          "label": "out",
+          "type": "any"
+        }
+      ],
+      "visible": true,
+      "showLabel": true,
+      "data": {
+        "markdown": "# 3D / Apple Angle\n\n- Single-image → 3D objects\n- Likely AR integration\n\nNot urgent for Twilite\nBut aligns with:\n\"LLM-generated worlds\"",
+        "memo": "",
+        "link": "",
+        "html": "",
+        "svg": ""
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "aa111111-2222-4333-8444-555555555001",
+      "type": "relates",
+      "source": "a1f0c9b2-9b6d-4d1e-8c2f-1a2b3c4d5e01",
+      "target": "b2e1d0c3-8a7f-4c2e-9d1b-2b3c4d5e6f02",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "in",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "aa111111-2222-4333-8444-555555555002",
+      "type": "relates",
+      "source": "a1f0c9b2-9b6d-4d1e-8c2f-1a2b3c4d5e01",
+      "target": "c3f2e1d4-7b6a-4e3f-8c2d-3c4d5e6f7a03",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "in",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "aa111111-2222-4333-8444-555555555003",
+      "type": "relates",
+      "source": "b2e1d0c3-8a7f-4c2e-9d1b-2b3c4d5e6f02",
+      "target": "d4a3b2c1-6c5d-4f4a-9b3e-4d5e6f7a8b04",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "in",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "aa111111-2222-4333-8444-555555555004",
+      "type": "relates",
+      "source": "d4a3b2c1-6c5d-4f4a-9b3e-4d5e6f7a8b04",
+      "target": "e5b4c3d2-5e4f-4a5b-8c4f-5e6f7a8b9c05",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "in",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    },
+    {
+      "id": "aa111111-2222-4333-8444-555555555005",
+      "type": "relates",
+      "source": "b2e1d0c3-8a7f-4c2e-9d1b-2b3c4d5e6f02",
+      "target": "f6c5d4e3-4f3a-4b6c-9d5f-6f7a8b9c0d06",
+      "sourcePort": "out",
+      "targetPort": "in",
+      "portMeta": {
+        "source": {
+          "key": "out",
+          "label": "out",
+          "type": "any",
+          "direction": "output",
+          "position": {
+            "side": "right",
+            "offset": 0.5
+          }
+        },
+        "target": {
+          "key": "in",
+          "label": "in",
+          "type": "any",
+          "direction": "input",
+          "position": {
+            "side": "left",
+            "offset": 0.5
+          }
+        }
+      },
+      "label": "",
+      "style": {
+        "width": 2,
+        "dash": [],
+        "curved": true
+      },
+      "data": {}
+    }
+  ],
+  "clusters": [],
+  "scripts": [
+    {
+      "id": "script_1761684730975",
+      "name": "New Script",
+      "source": "// Write your script here\n// Available API:\n//   api.getNodes()\n//   api.getNode(id)\n//   api.getEdges()\n//   api.createNode(data)\n//   api.updateNode(id, patch)\n//   api.deleteNode(id)\n//   api.createEdge(data)\n//   api.deleteEdge(id)\n//   api.log(level, message)\n\nconst nodes = await api.getNodes();\nreturn { count: nodes.length };",
+      "tags": ""
+    },
+    {
+      "id": "script_1761684295367",
+      "name": "Mike",
+      "source": "console.clear();\nconst nodes = await api.getNodes();\nconsole.log(\"Mike\");\nreturn { count: nodes.length };",
+      "tags": ""
+    }
+  ]
+}
